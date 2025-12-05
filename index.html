@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Turismo Chiquinquirá</title>
+  <meta name="description" content="Información turística y registro de operadores de Chiquinquirá, Boyacá." />
+  <style>
+    :root{
+      --blue-900:#002b5c;
+      --blue-600:#0072ce;
+      --bg:#eef2f7;
+      --card:#ffffff;
+      --text:#333;
+      --radius:12px;
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family: "Helvetica", "Arial", sans-serif;
+      margin:0;
+      padding:0;
+      background:var(--bg);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+    }
+
+    header{
+      background: linear-gradient(90deg, var(--blue-900) 0%, #0057a3 100%);
+      color: #fff;
+      padding: 36px 16px;
+      text-align: center;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.18);
+    }
+    header .brand{
+      max-width:1100px;
+      margin:0 auto;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+    header h1{
+      font-size:1.6rem;
+      font-weight:700;
+      margin:0;
+    }
+    header p{ margin:6px 0 0; font-size:1rem; opacity:0.95; }
+
+    header img{
+      max-width:220px;
+      height:auto;
+      border-radius:8px;
+      display:block;
+    }
+
+    main{ max-width:1100px; margin:22px auto; padding:0 16px; }
+
+    section{
+      padding:20px;
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:0 3px 10px rgba(0,0,0,0.06);
+      margin-bottom:18px;
+    }
+
+    h2{
+      color:#003d7a;
+      border-left:5px solid var(--blue-600);
+      padding-left:10px;
+      font-weight:600;
+      margin:0 0 10px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:10px 18px;
+      background:var(--blue-600);
+      color:#fff;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+      transition:background .18s ease;
+    }
+    .btn:hover{ background:#005fa3; }
+
+    iframe{ width:100%; border:0; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.12); }
+
+    .dashboard-img{ width:100%; height:auto; border-radius:8px; display:block; }
+
+    footer{
+      text-align:center;
+      padding:18px 12px 40px;
+      color:#555;
+    }
+    footer img{ width:72px; height:auto; display:block; margin:18px auto 0; }
+
+    /* Responsive */
+    @media (min-width:900px){
+      header h1{ font-size:2.1rem; }
+      header img{ max-width:260px; }
+    }
+
+    .formulario-img {
+  width: 600px;   /* ajusta el tamaño que quieras */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+}
+
+  </style>
+</head>
+<body>
+  <header role="banner">
+    <div class="brand" aria-hidden="false">
+      <img src="https://www.chiquinquira-boyaca.gov.co/sites/chiquinquiraboyaca/content/files/000216/10789_gobierno-digital-600x315_1200x627.png" alt="Logo Alcaldía Municipal de Chiquinquirá" />
+      <div>
+        <h1>Turismo en Chiquinquirá</h1>
+        <p>Descubre planes y la oferta turística del municipio</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section aria-labelledby="bienvenido">
+      <h2 id="bienvenido">Bienvenido</h2>
+      <p>En este espacio puedes conocer el análisis turístico del municipio y encontrar emprendedores locales.</p>
+    </section>
+
+<section aria-labelledby="oferta">
+  <h2 id="oferta">Oferta Turística</h2>
+  <p>Aquí puedes ubicar nuestros emprendedores que ofrecen alternativas para tu visita.</p>
+
+  <!-- Imagen del mapa -->
+  <img 
+    src="Imagen mapa.png" 
+    alt="Vista previa del mapa turístico"
+    class="mapa-img"
+    loading="lazy"
+    style="width:100%; max-width:650px; height:auto; margin-bottom:10px;"
+  />
+
+<!-- Botón que lleva al mapa en Google Maps -->
+<div style="margin:10px 0;">
+  <a class="btn" href="https://www.google.com/maps/d/u/1/edit?mid=1Fd8T1dXg4VzQaqUA4F0Z7ElGnZbRxcM&ll=5.614564864591794%2C-73.82102477904266&z=15" target="_blank" rel="noopener noreferrer">
+    Abrir mapa en Google Maps
+  </a>
+</div>
+
+ <section aria-labelledby="registro">
+  <h2 id="registro">Registro Operadores</h2>
+  <p>Operador o emprendedor turístico, regístrate para aparecer en el mapa y en nuestras guías.</p>
+
+  <!-- Imagen del formulario -->
+  <img 
+    src="Imagen formulario.png" 
+    alt="Vista del formulario de registro" 
+    class="formulario-img"
+    loading="lazy"
+  />
+
+  <a class="btn" href="https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&token=28fa1587e292474aa34108ef1d9759b3&id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZAALQHVxhURjA5RlkyV0RZN1pBMEc5NFhSMkFYNFZSMy4u&topview=Preview" target="_blank" rel="noopener noreferrer">Abrir formulario</a>
+</section>
+
+
+<section aria-labelledby="dashboard">
+  <h2 id="dashboard">Dashboard</h2>
+  <p>Lo siguiente es una visualización del analisis turístico.</p>
+
+  <img 
+    src="Imagen dashboard.png" 
+    alt="Vista previa del dashboard" 
+    class="dashboard-img" 
+    loading="lazy"
+  />
+</section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <p>Alcaldía Municipal de Chiquinquirá — Boyacá</p>
+    <img src="https://chiquinquiraboyaca.micolombiadigital.gov.co/sites/chiquinquiraboyaca/content/files/000214/favicon.png" alt="Escudo de Chiquinquirá" />
+  </footer>
+</body>
+</html>
